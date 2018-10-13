@@ -1,0 +1,58 @@
+body {
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+header {
+    background-color: #22333b;
+    text-align: center;
+    padding: .5rem;
+    color: #fff;
+    font-family: 'Libre Baskerville', serif;
+}
+
+header > img {
+    width: 150px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.headertext {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.headertext h1 {
+    font-size: 3rem;
+}
+
+.subheading {
+    font-size: 1.1rem;
+    color: #8693ab;
+    font-style: italic;
+}
+
+.currentconditions {
+    display: inline-block;
+    margin: 1rem 0rem 1rem 5rem;
+    padding: 1rem;
+    vertical-align: middle;
+    color: #fff;
+    background-color: #00798c;
+    border: 1 pt solid #8693ab;
+    font-size: 1.1rem;
+}
+
+.currentconditions > p {
+    vertical-align: middle;
+    color: #f5cb5c;
+    display: inline-block;
+}
+
+.currentconditions > img {
+    width: 90px;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
