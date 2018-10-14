@@ -5,14 +5,14 @@ body {
 }
 
 header {
-    background-color: #22333b;
+    background-color: #084764;
     text-align: center;
     padding: .5rem;
     color: #fff;
     font-family: 'Libre Baskerville', serif;
 }
 
-header > img {
+header  img {
     width: 150px;
     height: auto;
     vertical-align: middle;
@@ -27,7 +27,7 @@ header > img {
     font-size: 3rem;
 }
 
-.subheading {
+.motto {
     font-size: 1.1rem;
     color: #8693ab;
     font-style: italic;
