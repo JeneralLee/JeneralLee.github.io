@@ -1,3 +1,8 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 body {
 
     font-family: 'Montserrat', sans-serif;
@@ -44,13 +49,13 @@ header  img {
     font-size: 1.1rem;
 }
 
-.currentconditions > p {
+.currentconditions  p {
     vertical-align: middle;
     color: #f5cb5c;
     display: inline-block;
 }
 
-.currentconditions > img {
+.currentconditions  img {
     width: 90px;
     height: auto;
     vertical-align: middle;
