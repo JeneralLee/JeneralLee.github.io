@@ -1,0 +1,96 @@
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+body {
+    margin: 0px;
+    padding: 0px;
+
+color: #084764;
+color: #00798c;
+color: #8693ab;
+color: #f5cb5c;
+}
+nav{
+    font-family: 'Lato', sans-serif;
+}
+
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #084764;
+}
+
+li 
+{
+    float: left;
+}
+
+li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover 
+{
+    background-color: #f5cb5c;
+    color: #084764;
+}
+
+#logo 
+{
+    float: left;
+    width:  100px;
+    height: auto;
+}
+
+.currentconditions 
+{
+    float: right;
+    border: 2px solid #8693ab;
+    width:  150px;
+    height: auto;
+    vertical-align: top;
+}
+.currentconditions img
+{
+    width:100px;
+    height:auto;
+    float:left;
+}
+
+.currentconditions p
+{
+    color: #f5cb5c;
+    font-family: 'Lato', sans-serif;
+    vertical-align: center;
+}
+header
+{
+    background-color: #00798c;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+header h1 
+{
+    font-size: 2rem;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.motto
+{
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+
