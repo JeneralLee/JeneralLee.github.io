@@ -2,16 +2,11 @@
 font-family: 'Lato', sans-serif;
 font-family: 'Libre Baskerville', serif;
 font-family: 'Montserrat', sans-serif;
-*/
-body {
-    margin: 0px;
-    padding: 0px;
-
-color: #084764;
 color: #00798c;
 color: #8693ab;
 color: #f5cb5c;
-}
+
+*/
 nav{
     font-family: 'Lato', sans-serif;  
 }
@@ -93,7 +88,7 @@ header
 }
 header h1 
 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: 'Libre Baskerville', serif;
 }
 .motto
@@ -103,3 +98,53 @@ header h1
     font-style: italic;
 }
 
+body {
+    margin: 0;
+    padding: 0px;
+
+color: #084764;
+}
+
+main {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;    
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#container {
+    position: relative;
+}
+#townshot {
+    max-width: 100%;
+}
+
+#table {
+    position: absolute;
+    top: 25%;
+    left: 16px;
+    font-size: 1rem;
+}
+article {
+    border: 1px solid #8693ab;
+    max-width: 800px;
+    height: auto;
+    background-color: rgb(235, 231, 231);
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10 px 1px;
+    position: relative;
+}
+
+#fair {
+    float: right;
+    max-width: 100px;
+
+}
+
+h3 {font-size: 1.25rem;}
+h4 {font-size: .8rem;}
