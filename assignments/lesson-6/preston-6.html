@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Weather in Your Corner &verbar; Preston, ID</title>
+    <meta name="description" content="Weather for Preston ID">
+    <link rel="stylesheet" href="../../styles/normalize.css">
+    <link rel="stylesheet" href="styles/large-5.css" media='screen and (min-width: 701px)'>
+    <link rel="stylesheet" href="styles/small-5.css" media="screen and (max-width: 700px">
+    <!--[if lt IE 9]-->
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <!--[endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <!--The next stylesheet is for hamburger menu-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="images/if_weather-05_1530388.png" alt="logo">
+        <div class="headertext">
+            <h1>Weather In Your Corner</h1>
+            <div class="motto">Up-to-the-minute weather for Southeast Idaho</div>
+        </div>
+        <div class="currentconditions">
+            <img id="current" src="images/if_weather-01_1530392.png" alt="current weather condition icon">
+            <p id="weatherdescription">Sunny</p>
+        </div>
+    </header>
+    <nav>
+        <ul class="mainmenu" id="myMainMenu">
+            <li><a href="#Menu" onclick="">Menu</a></li>
+            <li><a href="#home">Home</a> </li>
+            <li><a href="#Preston">Preston</a></li>
+            <li><a href="#Soda+Springs">Soda Springs</a></li>
+            <li><a href="#Fish+Haven">Fish Haven</a></li>
+            <li><a href="#Storm+Center">Storm Center</a></li>
+            <li><a href="#Gallery">Gallery</a></li>
+            <a href="javascript:void(0);" class="icon" onclick="scripts/hamburger.js">
+                <i class="fa fa-bars"></i>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="pagetitle">The Town of Preston</h2>
+        <div class="hero">
+            <figure>
+                 <img src="images/franklin-broke.jpg" alt text" class="hero-img" sizes="100vw"
+                            srcset="images/franklin-small.jpg 200w,
+                                images/franklin-large.jpg 800w">
+            <section class="weathersummary">
+                <h3>Weather Summary</h3>
+                <div class="weatherdetails">
+                    <p class="label">Currently:</p>
+                    <p class="value">Sunny</p>
+                    <p class="label">Temperature:</p>
+                    <p class="value">76 &deg;F</p>
+                    <p class="label">Humidity:</p>
+                    <p class="value">69%</p>
+                    <p class="label">Precipitation:</p>
+                    <p class="value">0 inches</p>
+                    <p class="label">Wind Speed:</p>
+                    <p class="value">5 mph</p>
+                </div>
+            </section>
+        </div>
+        <section class="forecast">
+            <h3>High Temperature Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Forecast</th>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <article class="article">
+            <h3 class="headline">State Fair Heads to Preston</h3>
+            <img id="fair" class="article-img" src="images/fair.jpg" alt="State fair grounds with rides"></article> 
+            <h4 class="byline">by Suzie Q. Snowflake</h4>
+            <p>Nulla elementum turpis sit amet lobortis congue. Quisque ut lorem
+                vel mi dapibus sagittis. Phasellus pretium odio a dolor aliquam
+                aliquam. Quisque ultrices lacus ac bibendum lobortis. Nam quam
+                eros, iaculis in dapibus at, hendrerit et mi. Phasellus ultricies
+                facilisis eros non elementum. Duis erat mauris, posuere vitae
+                sapien sed, ornare pellentesque diam. Nullam vel consectetur
+                nunc. Vivamus eu elit vel risus laoreet mollis vitae a mauris.
+                Quisque blandit at nulla vel hendrerit. Morbi hendrerit, mauris
+                sit amet sodales laoreet, dui urna tempor tellus, sed rutrum
+                <a href="#fullarticle">. . . click here to continue to full text.</a>
+            </p>
+    </main> 
+    <aside id="contactinfo"></aside>
+    <footer>
+        <ul class="footer">
+            <li>&copy;</li>
+            <li>Weather in Your Corner &vert; </li>
+            <li>Attributions &vert; </li>
+            <li>Jennifer Ruggles &vert; </li>
+            <li id="footer-date"></li>
+        </ul>
+    </footer>
+<script src="scripts/currentdate.js"></script>
+</body>
+
+</html>

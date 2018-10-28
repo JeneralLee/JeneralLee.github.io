@@ -1,14 +1,13 @@
 /*
-font-family: 'Lato', sans-serif;
-font-family: 'Libre Baskerville', serif;
-font-family: 'Montserrat', sans-serif;
 color: #00798c;
 color: #8693ab;
 color: #f5cb5c;
 
 */
+body {    font-family: 'Lato', sans-serif;  
+}
 nav{
-    font-family: 'Lato', sans-serif;  
+    font-family: 'Lato', sans-serif; 
 }
 
 ul 
@@ -67,6 +66,7 @@ header
     max-width: 200px;
     margin-left: 100px;
     background-color: whitesmoke;
+    display: none;
 }
 #current
 {
@@ -96,11 +96,14 @@ header h1
     font-size: 1.1rem;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
+    margin-right: auto;
+    margin-left: auto;
+    flex: 10 0;
 }
 
 body {
     margin: 0;
-    padding: 0px;
+    padding: 0;
 
 color: #084764;
 }
@@ -116,18 +119,35 @@ h2 {
     text-align: center;
 }
 
-#container {
+.hero {
+    border: 1 px solid #8693ab;
+    max-width: 800px;
+    height: auto;
+    background-color: rgb(235, 231, 231);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 1px;
     position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
-#townshot {
-    max-width: 100%;
+.hero-img {
+    max-width:  100px;
+    height: 100px;
+    flex: 1 auto;
+    margin-right: 100px;
 }
 
-#table {
+.weatherdetails {
     position: absolute;
     top: 25%;
     left: 16px;
     font-size: 1rem;
+    flex: 1 auto;
+
 }
 article {
     border: 1px solid #8693ab;
@@ -136,7 +156,7 @@ article {
     background-color: rgb(235, 231, 231);
     margin-right: auto;
     margin-left: auto;
-    padding: 10 px 1px;
+    padding: 10px 1px;
     position: relative;
 }
 
@@ -146,5 +166,16 @@ article {
 
 }
 
+.forecast {
+    display: none;
+}
 h3 {font-size: 1.25rem;}
 h4 {font-size: .8rem;}
+
+@media(min-width:701px){
+.forecast, .currentconditions {
+    display: visible;
+    }
+}
+
+body {background-color: lightgreen;}
