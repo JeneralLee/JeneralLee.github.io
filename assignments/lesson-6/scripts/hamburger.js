@@ -1,6 +1,15 @@
-var x = document.getElementById("myMainMenu");
-    if (x.className === "mainmenu") {
+var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
         x.className += " responsive";
     } else {
-        x.className = "mainmenu";
+        x.className = "topnav";
+    }
+
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
     }

@@ -7,8 +7,8 @@
     <title>Weather in Your Corner &verbar; Preston, ID</title>
     <meta name="description" content="Weather for Preston ID">
     <link rel="stylesheet" href="../../styles/normalize.css">
-    <link rel="stylesheet" href="styles/large-5.css" media='screen and (min-width: 701px)'>
-    <link rel="stylesheet" href="styles/small-5.css" media="screen and (max-width: 700px">
+    <link rel="stylesheet" href="styles/small-5.css">
+    <link rel="stylesheet" href="styles/large-5.css">
     <!--[if lt IE 9]-->
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <!--[endif]-->
@@ -16,8 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
     <!--The next stylesheet is for hamburger menu-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
 
 <body>
     <header>
@@ -31,26 +30,29 @@
             <p id="weatherdescription">Sunny</p>
         </div>
     </header>
-    <nav>
-        <ul class="mainmenu" id="myMainMenu">
-            <li><a href="#Menu" onclick="">Menu</a></li>
-            <li><a href="#home">Home</a> </li>
-            <li><a href="#Preston">Preston</a></li>
-            <li><a href="#Soda+Springs">Soda Springs</a></li>
-            <li><a href="#Fish+Haven">Fish Haven</a></li>
-            <li><a href="#Storm+Center">Storm Center</a></li>
-            <li><a href="#Gallery">Gallery</a></li>
-            <a href="javascript:void(0);" class="icon" onclick="scripts/hamburger.js">
-                <i class="fa fa-bars"></i>
-        </ul>
+    <nav class="topnav" id="myTopnav">
+        <a href="#menu" class="active">Menu</a>
+        <a href="#home">Home</a>
+        <a href="#Preston">Preston</a>
+        <a href="#SodaSprings">Soda Springs</a>
+        <a href="#FishHaven">Fish Haven</a>
+        <a href="#StormCenter">Storm Center</a>
+        <a href="#Gallery">Gallery</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </nav>
     <main>
         <h2 class="pagetitle">The Town of Preston</h2>
         <div class="hero">
             <figure>
-                 <img src="images/franklin-broke.jpg" alt text" class="hero-img" sizes="100vw"
-                            srcset="images/franklin-small.jpg 200w,
-                                images/franklin-large.jpg 800w">
+                 <img src="images/franklin-broke.jpg" alt="image of franklin" 
+                 class="hero-img" sizes="100vw"
+                 srcset="images/franklin-400-96.jpg 800w,
+                        images/franklin-800-50.jpg 1020w">
+                <p class="small-txt">Small</p>
+                <p class="large-txt">Large</p>
+            </figure>    
             <section class="weathersummary">
                 <h3>Weather Summary</h3>
                 <div class="weatherdetails">
@@ -109,7 +111,7 @@
             </p>
     </main> 
     <aside id="contactinfo"></aside>
-    <footer>
+    <footer class="topnav">
         <ul class="footer">
             <li>&copy;</li>
             <li>Weather in Your Corner &vert; </li>
@@ -119,6 +121,7 @@
         </ul>
     </footer>
 <script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
 </body>
 
 </html>
