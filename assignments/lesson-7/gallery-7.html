@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Weather Gallery</title>
+    <meta name="description" content="Gallery of weather images">
+    <link rel="stylesheet" href="../../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small-5.css">
+    <link rel="stylesheet" href="styles/large-5.css"
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <!--The next stylesheet is for hamburger menu-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <figure class="headerbox">
+            <img class="headerimg" id="logo" src="images/if_weather-05_1530388.png" alt="logo">
+        </figure>
+        <div class="headertext">
+            <h1>Weather In Your Corner</h1>
+            <h2 class="motto">Up-to-the-minute weather for Southeast Idaho</h2>
+        </div>
+        <div class="currentconditions">
+            <img class="headerimg" id="current" src="images/if_weather-01_1530392.png" alt="current weather condition icon">
+            <p class="currentdescr" id="weatherdescription">Sunny</p>
+        </div>
+    </header>
+    <nav class="topnav" id="myTopnav">
+        <div class="row">
+            <a href="#menu">Menu</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+        </div>
+        <a href="preston-7.html" target="_blank"">Home</a>
+        <a href="#Preston">Preston</a>
+        <a href="#SodaSprings">Soda Springs</a>
+        <a href="#FishHaven">Fish Haven</a>
+        <a href="#StormCenter">Storm Center</a>
+        <a href="gallery-7.html" target="_blank" class="active">Gallery</a>
+    </nav>
+    <main class="gallerypage">
+        <figure class="galleryimage">
+            <img src="images/eberhard-grossgasteiger-563252-unsplash 200 100per.jpg" alt="Snow on a mountain" 
+                 class="image1" srcset="images/eberhard-grossgasteiger-563252-unsplash 400 85per.jpg,
+                                        images/eberhard-grossgasteiger-563252-unsplash 800 50per.jpg">
+            <figcaption>Photo by eberhard grossgasteiger on Unsplash</figcaption>
+        </figure>
+        <figure class="galleryimage">
+            <img src="images/craig-whitehead-495277-unsplash 200 95per.jpg" alt="Man holding umbrella in snow"
+                 class="image2"
+                 srcset="images/craig-whitehead-495277-unsplash 400 85per.jpg,
+                         images/craig-whitehead-495277-unsplash 800 50per.jpg">
+            <figcaption>Photo by Craig Whitehead on Unsplash</figcaption>
+        </figure>
+        <figure class="galleryimage">
+            <img src="images/jonathan-bowers-531776-unsplash 200 95per.jpg" alt="Distand lightning strikes over field"
+                 class="image3"
+                 srcset="images/jonathan-bowers-531776-unsplash 400 85per.jpg,
+                         images/jonathan-bowers-531776-unsplash 800 85per.jpg">
+            <figcaption>Photo by Jonathan Bowers on Unsplash</figcaption>
+        </figure>
+        <figure class="galleryimage">
+            <img src="images/malcolm-lightbody-665813-unsplash 200 100per.jpg" alt="Cloud pouring rain over lake"
+                 class="image4"
+                 srcset="images/malcolm-lightbody-665813-unsplash 400 95per.jpg,
+                         images/malcolm-lightbody-665813-unsplash 800 85per.jpg">
+            <figcaption>Photo by Malcolm Lightbody on Unsplash</figcaption>
+        </figure>
+        <figure class="galleryimage">
+            <img src="images/max-larochelle-421822-unsplash 200 95per.jpg" alt="Multiple lightning strikes over trees"
+                 class="image5"
+                 srcset="images/max-larochelle-421822-unsplash 400 85per.jpg,
+                         images/max-larochelle-421822-unsplash 800 50per.jpg">
+            <figcaption>Photo by Max LaRochelle on Unsplash</figcaption>
+        </figure>
+        <figure class="galleryimage">
+            <img src="images/nasa-63030-unsplash 200 95per.jpg" alt="Satellite image of hurricane spiral cloud over land"
+                 class="image6"
+                 srcset="images/nasa-63030-unsplash 400 85per.jpg,
+                         images/nasa-63030-unsplash 800 50per.jpg">
+            <figcaption>Photo by NASA on Unsplash</figcaption>
+        </figure>
+    </main>
+</body>

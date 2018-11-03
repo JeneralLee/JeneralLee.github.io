@@ -1,0 +1,242 @@
+body {    font-family: 'Lato', sans-serif;  
+}
+nav{
+    font-family: 'Lato', sans-serif; 
+}
+.topnav {
+    overflow: hidden;
+    background-color: #084764;
+    display: flex;
+    flex-direction: column;
+  }
+.row {
+    display: flex;
+    justify-content: space-between;
+}  
+  .topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #f5cb5c;
+    color: #084764;
+  }
+  
+  .active {
+    background-color: #067252;
+    color: white;
+  }
+  
+  
+  @media screen and (max-width: 720px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        display: inherit;
+    }
+  }
+  
+  @media screen and (max-width: 720px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+ /*     position: absolute;
+      right: 0;
+      top: 0; */
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+header {
+    background-color: #00798c;
+    color: #fff;
+    padding: 50px 10px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+    .headerbox {
+        margin: 0;
+    }
+    .headerimg {
+        max-width:  100px;
+        height: 100px;
+    }
+    figure {
+        min-width:180px;
+        justify-content: center;
+        display: flex;
+    }
+    .currentconditions {
+        background-color: rgb(206, 205, 205);
+        display: none;
+        justify-content: space-around;
+        flex: row nowrap;
+        min-width: 180px;
+    }
+    .currentconditions p {
+        color: #084764;
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        align-self: center;
+        margin-left: 6px;
+    }
+    .headertext {
+        display: flex;
+        flex-direction: column;
+        max-width: 760px;
+        margin: 0 20px;
+        align-items: center;
+    }
+    h1 {
+        font-size: 3rem;
+        font-family: 'Libre Baskerville', serif;
+        text-align: center;
+        margin: 0;
+    }
+    .motto {
+        font-size: 1.25rem;
+        font-family: 'Montserrat', serif;
+        font-style: italic;
+        text-align: center;
+    }
+
+body {
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.pagetitle {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.hero {
+    background-color: rgb(235, 231, 231);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.hero-img {
+    width:  100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.weatherdetails {
+    position: absolute;
+    top: 5%;
+    width: 300px;
+    left: 5%;
+    font-size: 1.25rem;
+    flex: 1 auto;
+    border: 1px solid #8693ab;
+    background-color: rgba(3, 95, 42, 0.75);
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 8px 2px;
+}
+.label {
+    align-self: flex-start;
+    flex-basis: 150;
+    margin: 6px 0;
+}
+.value {
+    align-self:flex-end;
+    flex-basis: 100px;
+    margin: 6px 0;
+}
+.summarytitle {
+    color: white;
+}
+.large-txt {
+    display: none;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+.small-txt {
+    display: none;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    color: magenta;
+}
+.article {
+    background-color: rgb(235, 231, 231);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.article-img {
+    width: 100%;
+}
+
+.text {
+    text-align: justify;
+}
+
+.forecast {
+    display: none;
+}
+h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    margin: 0;
+    padding: 0;
+}
+h4 {
+    font-size: .8rem;
+    text-align: center;
+    margin: 0;
+    padding: 3px;
+}
+
+ul {background-color: #084764;}
+li {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 4px 6px;
+    text-decoration: none;
+    font-size: .75rem;
+    align-content: space-around;
+}
+.topnav .icon {
+    display: none;
+  }
+
+  .gallerypage {
+    display: grid;
+    grid-gap: 1em;
+}
+.galleryimage {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
