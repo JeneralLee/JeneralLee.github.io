@@ -41,8 +41,8 @@ nav{
   
   @media screen and (max-width: 720px) {
     .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
- /*     position: absolute;
+  /*  .topnav.responsive .icon {
+      position: absolute;
       right: 0;
       top: 0; */
     }
@@ -106,10 +106,6 @@ header {
         font-style: italic;
         text-align: center;
     }
-
-body {
-
-}
 
 main {
     display: flex;
