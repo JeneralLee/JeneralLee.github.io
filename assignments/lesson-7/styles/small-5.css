@@ -30,8 +30,9 @@ nav{
     background-color: #067252;
     color: white;
   }
-  
-  
+  .topnav .icon {
+    display: none;
+  }
   @media screen and (max-width: 720px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -51,8 +52,8 @@ nav{
       display: block;
       text-align: left;
     }
-  }
-header {
+    
+ header {
     background-color: #00798c;
     color: #fff;
     padding: 50px 10px;
@@ -77,7 +78,8 @@ header {
         background-color: rgb(206, 205, 205);
         display: none;
         justify-content: space-around;
-        flex: row nowrap;
+        flex-direction: row; 
+        flex-wrap: nowrap;
         min-width: 180px;
     }
     .currentconditions p {
@@ -154,7 +156,7 @@ main {
 }
 .label {
     align-self: flex-start;
-    flex-basis: 150;
+    flex-basis: 150px;
     margin: 6px 0;
 }
 .value {
@@ -221,9 +223,6 @@ li {
     font-size: .75rem;
     align-content: space-around;
 }
-.topnav .icon {
-    display: none;
-  }
 
   .gallerypage {
     display: grid;

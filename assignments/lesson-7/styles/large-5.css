@@ -35,6 +35,9 @@
         max-width: 50%;
     }
     }
+    .topnav .icon {
+        display: none;
+      }
 
 table {
     width: 100%;
