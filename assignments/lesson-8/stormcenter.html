@@ -28,7 +28,8 @@
             <h2 class="motto">Up-to-the-minute weather for Southeast Idaho</h2>
         </div>
         <div class="currentconditions">
-            <img class="headerimg" id="current" src="images/if_weather-01_1530392.png" alt="current weather condition icon">
+            <img class="headerimg" id="current" src="images/if_weather-01_1530392.png" 
+                alt="current weather condition icon">
             <p class="currentdescr" id="weatherdescription">Sunny</p>
         </div>
     </header>
@@ -47,21 +48,54 @@
     </nav>
     <main>
         <h2 class="pagetitle">Storm Center</h2>
-            <form method="get" action="thanks.html">
-                    <fieldset>
-                        <legend>Your Information</legend>
-                        <label class="top">Full Name*<input type="text" name="fname" pattern="[A-Za-z\s]{5,25}" 
-                                                        title="Name must be at least 5 letters" placeholder="Firstname Lastname"
-                                                        required></label>
-                        <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
-                        <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
-                        <label class="top">Zip Code*<input type="number" minlength="5" name="zip" required></label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Storm Data</legend>
-                    </fieldset>
-                    <input type="submit" value="Submit My Storm Data" class="submitBtn">
-                    <footer class="topnav">
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Your Information</legend>
+                <label class="top">Full Name*<input type="text" name="fname" 
+                    pattern="[A-Za-z\s]{5,25}" title="Name must be at least 5 letters"
+                    placeholder="Firstname Lastname" required></label>
+                <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234"
+                    required></label>
+                <label class="top">Email<input type="email" name="email" 
+                    placeholder="someone@gmail.com"></label>
+                <label class="top">Zip Code*<input type="number" name="zip" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Data</legend>
+                <label class="top">Storm Date<input type="date" name="stormdate"></label>
+                <label class="top">Storm Type<input list="stormTypes" name="stormTypes"></label>
+                <datalist id="stormTypes">
+                    <option value="Flash Flood">Flash Flood</option>
+                    <option value="Hail">Hail</option>
+                    <option value="Hurricane">Hurricane</option>
+                    <option value="Severe Lightning">Severe Lightning</option>
+                    <option value="Thunderstorm">Thunderstorm</option>
+                    <option value="Tornado">Tornado</option>
+                </datalist>
+                <label class="top slider">Storm Severity<input type="range" min="1" max="10" 
+                    value="5" name="severity" id="myRange"></label>
+                    <div>Value: <span id="sliderValue"></span></div>
+                <label class="top">Storm Region
+                    <select name="region">
+                        <option value="" selected disabled>Select Region &#9662;</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select>
+                </label>
+                <div>Are you in danger?</div>
+                <label><input type="radio" value="yes" name="userInDanger">Yes<br></label>
+                <label><input type="radio" value="maybe" name="userInDanger">Maybe<br></label>
+                <label><input type="radio" value="no" name="userInDanger">No<br></label>
+            <div>Comments</div>
+            <label><textarea placeholder="Enter additional information here." name="comments"
+                rows="10" cols="30"></textarea>
+            </label>
+            </fieldset>
+            <input type="submit" value="Submit My Storm Data" class="submitBtn">
+        </form>
+    </main>
+    <footer class="topnav">
         <ul class="footer">
             <li>&copy;</li>
             <li>Weather in Your Corner &vert; </li>
@@ -72,6 +106,6 @@
     </footer>
 <script src="scripts/currentdate.js"></script>
 <script src="scripts/hamburger.js"></script>
+<script src="scripts/slider.js"></script>
 </body>
-
 </html>

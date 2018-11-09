@@ -278,19 +278,20 @@ form label.sbs {
 }
 
 form input.submitBtn {
-    border: none;
-    background-color: #d13336;
-    color: white;
-    border-radius: 1rem;
+    background-color: #f5cb5c;
+    border-radius: 1.4rem;
+    border: solid 2px #ce9701;
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
     width: 96%;
     max-width: 20rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 form label.top input:required {
     background-color: #d1333623;
-    border: #d13336 solid 3px;
+    border: #d13336 solid 2px;
 }
 
 form label.top input:required:valid {
