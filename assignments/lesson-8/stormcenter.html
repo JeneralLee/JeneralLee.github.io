@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Storm Center</title>
+    <meta name="description" content="Weather for Preston ID">
+    <link rel="stylesheet" href="../../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small-5.css">
+    <link rel="stylesheet" href="styles/large-5.css">
+    <!--[if lt IE 9]-->
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <!--[endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <!--The next stylesheet is for hamburger menu-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+
+<body>
+    <header>
+        <figure class="headerbox">
+            <img class ="headerimg" id="logo" src="images/if_weather-05_1530388.png" alt="logo">
+        </figure>
+        <div class="headertext">
+            <h1>Weather In Your Corner</h1>
+            <h2 class="motto">Up-to-the-minute weather for Southeast Idaho</h2>
+        </div>
+        <div class="currentconditions">
+            <img class="headerimg" id="current" src="images/if_weather-01_1530392.png" alt="current weather condition icon">
+            <p class="currentdescr" id="weatherdescription">Sunny</p>
+        </div>
+    </header>
+    <nav class="topnav" id="myTopnav">
+        <div class="row">
+          <a href="#menu">Menu</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+        </div>
+        <a href="#home">Home</a>
+        <a href="#Preston">Preston</a>
+        <a href="#SodaSprings">Soda Springs</a>
+        <a href="#FishHaven">Fish Haven</a>
+        <a href="#StormCenter"  class="active">Storm Center</a>
+        <a href="gallery-7.html" target="_blank">Gallery</a>
+    </nav>
+    <main>
+        <h2 class="pagetitle">Storm Center</h2>
+            <form method="get" action="thanks.html">
+                    <fieldset>
+                        <legend>Your Information</legend>
+                        <label class="top">Full Name*<input type="text" name="fname" pattern="[A-Za-z\s]{5,25}" 
+                                                        title="Name must be at least 5 letters" placeholder="Firstname Lastname"
+                                                        required></label>
+                        <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+                        <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                        <label class="top">Zip Code*<input type="number" minlength="5" name="zip" required></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Storm Data</legend>
+                    </fieldset>
+                    <input type="submit" value="Submit My Storm Data" class="submitBtn">
+                    <footer class="topnav">
+        <ul class="footer">
+            <li>&copy;</li>
+            <li>Weather in Your Corner &vert; </li>
+            <li>Attributions &vert; </li>
+            <li>Jennifer Ruggles &vert; </li>
+            <li id="footer-date"></li>
+        </ul>
+    </footer>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
+</body>
+
+</html>
