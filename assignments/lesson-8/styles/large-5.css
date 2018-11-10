@@ -7,7 +7,7 @@
         flex-direction: row;
     }
 
-    .topnav a:(:first-child) {
+    .topnav a:first-child {
                 margin-right: auto;
     }
 }   
