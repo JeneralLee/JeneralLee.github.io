@@ -75,3 +75,8 @@ table {
     img:hover {box-shadow: 5px 5px 10px gray;}
     figcaption:hover {box-shadow: 5px 5px 20px gray;}
 }
+
+form label.sbs {
+    padding: .4rem 0;
+}
+
