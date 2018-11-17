@@ -300,13 +300,6 @@ form label.top input:required:valid {
 
 }
 
-/*----- Clearfix: Force an Element not to collapse -----*/
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .thanks {
     display: flex;
     flex-direction: column;
@@ -321,3 +314,44 @@ form label.top input:required:valid {
     justify-self: center;
     margin: 3rem auto;
 }
+/* ---------- Styles for home page ---------- */
+main.index {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 100%;
+}
+main.index > div.index {
+    position: relative;
+    display: flex;
+    border: 1px solid #084764;
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+div.index section {
+    background-color: rgba(148, 219, 236, .5);
+    float: left;
+    margin: 3px;
+}
+.homepage {
+    display: flex;
+    flex-direction: column;
+}
+
+.footnote {
+    font-style: italic;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  

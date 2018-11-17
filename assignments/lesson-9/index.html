@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Weather in Your Corner</title>
+    <meta name="description" content="Weather for Southeast ID">
+    <link rel="stylesheet" href="../../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small-5.css">
+    <link rel="stylesheet" href="styles/large-5.css">
+    <!--[if lt IE 9]-->
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <!--[endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <!--The next stylesheet is for hamburger menu-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="homepage">
+        <div class="headertext">
+            <h1>Weather In Your Corner</h1>
+            <h2 class="motto">Up-to-the-minute weather for Southeast Idaho</h2>
+        </div>
+        <figure class="headerbox">
+            <img class ="headerimg" id="logo" src="images/if_weather-05_1530388.png" alt="logo">
+        </figure>
+    </header>
+    <nav class="topnav" id="myTopnav">
+        <div class="row">
+          <a href="#menu">Menu</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+        </div>
+        <a href="#home" class="active">Home</a>
+        <a href="preston-8.html" target="_blank">Preston</a>
+        <a href="#SodaSprings">Soda Springs</a>
+        <a href="#FishHaven">Fish Haven</a>
+        <a href="stormcenter.html" target="_blank">Storm Center</a>
+        <a href="gallery-8.html" target="_blank">Gallery</a>
+    </nav>
+    <main class="index">
+        <div class="city Preston index">
+            <img src="images/andre-benz-487833-unsplash-400-90p.jpg" alt="image of Preston">
+            <section class="index city">
+                <h3 class="index Preston city" id="Pname"></h3>
+                <h4 class="index Preston city" id="Pmotto"></h4>
+                <p class="index Preston city">Founded in: <span id="Pyear"></span></p>
+                <p class="index Preston city">Population: <span id="Ppop"></span></p>
+                <p class="index Preston city">Average Rainfall&ast;: <span id="Prain"></span></p>
+            </section>
+        </div>
+        <div class="city SodaSprings index">
+            <img src="images/mahir-uysal-372547-unsplash-400-70p.jpg" alt="image of Soda Springs">
+            <section class="index city">
+                <h3 class="index SodaSprings city" id="SSname"></h3>
+                <h4 class="index SodaSprings city" id="SSmotto"></h4>
+                <p class="index SodaSprings city">Founded in: <span id="SSyear"></span></p>
+                <p class="index SodaSprings city">Population: <span id="SSpop"></span></p>
+                <p class="index SodaSprings city">Average Rainfall&ast;: <span id="SSrain"></span></p>
+            </section>
+        </div>
+        <div class="city FishHaven index">
+            <img src="images/kazuend-40010-unsplash-400-50p.jpg" alt="image of Fish Haven">
+            <section class="index city">
+                <h3 class="index FishHaven city" id="FHname"></h3>
+                <h4 class="index FishHaven city" id="FHmotto"></h4>
+                <p class="index FishHaven city">Founded in: <span id="FHyear"></span></p>
+                <p class="index FishHaven city">Population: <span id="FHpop"></span></p>
+                <p class="index FishHaven city">Average Rainfall&ast;: <span id="FHrain"></span></p>
+            </section>
+        </div>
+    </main>
+    <footer class="topnav">
+            <ul class="footer">
+                <li>&copy;</li>
+                <li>Weather in Your Corner &vert; </li>
+                <li>Attributions &vert; </li>
+                <li>Jennifer Ruggles &vert; </li>
+                <li id="footer-date"></li>
+                <li id="footnote">&ast;inches per year</li>
+            </ul>
+        </footer>
+        <script src="scripts/homepage.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/windchill.js"></script>
+    </body>
+</html>

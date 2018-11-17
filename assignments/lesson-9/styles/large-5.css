@@ -62,7 +62,6 @@ table {
     text-align: center;
   }
 
-  
 @media screen and (min-width: 37.5em) {
     .gallerypage {
         grid-template-columns: 1fr 1fr;
