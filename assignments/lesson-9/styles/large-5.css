@@ -66,7 +66,26 @@ table {
     .gallerypage {
         grid-template-columns: 1fr 1fr;
     }
-}
+    main.index {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 3px;
+
+    }
+    main.index > div.index {
+        position: relative;
+        border: 1px solid #084764;
+        margin: 3px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    }
+
+
 @media screen and (min-width: 64em) {
     .gallerypage {
     grid-template-columns: 1fr 1fr 1fr;
