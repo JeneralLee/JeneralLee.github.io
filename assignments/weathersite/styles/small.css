@@ -224,6 +224,10 @@ li {
     align-content: space-around;
 }
 
+.footer a {
+    font-size: .75rem;
+}
+
   .gallerypage {
     display: grid;
     grid-gap: 1em;
