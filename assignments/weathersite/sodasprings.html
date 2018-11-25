@@ -32,19 +32,19 @@
             <p class="currentdescr" id="weatherdescription">broke</p>
         </div>
     </header>
-    <nav class="topnav" id="myTopnav">
-        <div class="row">
-          <a href="#menu" class="active">Menu</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i></a>
-        </div>
-        <a href="index.html" target="_blank">Home</a>
-        <a href="preston.html" target="_blank">Preston</a>
-        <a href="#SodaSprings">Soda Springs</a>
-        <a href="fishhaven.html" target="_blank">Fish Haven</a>
-        <a href="stormcenter.html" target="_blank">Storm Center</a>
-        <a href="gallery.html" target="_blank">Gallery</a>
-    </nav>
+    <ul class="topnav" id="myTopnav">
+            <div class="row">
+            <li><a>Menu</a></li>  
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a></li>  
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            </ul>
     <main>
         <h2 class="pagetitle">The Town of Soda Springs</h2>
         <div class="hero">
@@ -113,7 +113,15 @@
             </p>
         </article>
     </main> 
-    <aside id="contactinfo"></aside>
+    <aside id="contactinfo">
+        <div class='contactinfo'>
+            <h5>Contact Information</h5>
+            Jennifer Ruggles<br>
+            1234 Main St.<br>
+            Preston, ID 83263
+        </div>
+        <img class="map" src="images/sodaspringsmap.png" alt="map of soda springs">
+    </aside>
     <footer class="topnav">
         <ul class="footer">
             <li>&copy;</li>
@@ -127,6 +135,7 @@
 <script src="scripts/hamburger.js"></script>
 <script src="scripts/sodasprings.js"></script>
 <script src="scripts/windchill.js"></script>
+<script src="scripts/wayfinding.js"></script>
 </body>
 
 </html>

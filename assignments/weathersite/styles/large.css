@@ -34,7 +34,7 @@
         justify-content: flex-start;
         max-width: 50%;
     }
-    }
+
     .topnav .icon {
         display: none;
       }
@@ -62,6 +62,21 @@ table {
     text-align: center;
   }
 
+  .article {
+      grid-template-columns: 3fr 1fr;
+      grid-template-areas: 
+                            'title blank'
+                            'byline img'
+                            'article blank';
+  }
+
+  aside {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 'map info'
+  }
+}
+
+/*----- Gallery Page -----*/
 @media screen and (min-width: 37.5em) {
     .gallerypage {
         grid-template-columns: 1fr 1fr;
