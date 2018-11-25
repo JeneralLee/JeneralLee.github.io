@@ -315,14 +315,6 @@ form label.top input:required:valid {
     margin: 3rem auto;
 }
 /* ---------- Styles for home page ---------- */
-/*main.index {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-basis: 100%;
-}
-*/
 main.index > div.index {
     position: relative;
     display: flex;

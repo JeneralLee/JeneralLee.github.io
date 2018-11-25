@@ -1,0 +1,226 @@
+body {    font-family: 'Lato', sans-serif;
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    grid-template-areas: 
+                        'head'
+                        'nav'
+                        'title'
+                        'hero'
+                        'article'
+                        'contact'
+                        'footer';
+}
+
+/*----- Header Formatting -----*/
+header {
+    background-color: #00798c;
+    color: #fff;
+    padding: 50px 10px;
+    grid-area: head;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+                        'icon'
+                        'title';
+}
+
+.headerbox {
+    grid-area: icon;
+    justify-content: center;
+}
+
+.headertext {
+    margin: 0 20px;
+    align-items: center;
+    grid-area: title;
+}
+
+.headerimg {
+    max-width:  100px;
+    height: 100px;
+    align-self: center;
+}
+
+.currentconditions {
+    display: none;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    margin: 0;
+}
+.motto {
+    font-size: 1.25rem;
+    font-family: 'Montserrat', serif;
+    font-style: italic;
+    text-align: center;
+}
+/*----- Page Title -----*/
+    
+.pagetitle {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    grid-area: title;
+}
+
+/*----- Hero Image with Weather Summary -----*/
+
+.hero {
+    width: 100%;
+    grid-template-areas: 'hero';
+    display: grid;
+}
+
+.hero-img {
+    width: auto;
+    grid-area: hero;
+}
+
+table.weatherdetails {
+    border-collapse: collapse;
+    max-width: 300px;
+    font-size: 1.25rem;
+    border: 1px solid #8693ab;
+    background-color: rgba(3, 95, 42, 0.75);
+    color: #fff;
+    padding: 8px 2px;
+    grid-area: hero;
+
+}
+
+td{
+    text-align: center;
+}
+
+/*----- Forecast ----- */
+
+.forecast {
+    visibility: hidden;
+}
+
+/*----- Article -----*/
+.article {
+    grid-area: article;
+    background-color: rgb(235, 231, 231);
+}
+
+.article-img {
+    width: 100%;
+}
+
+.text {
+}
+
+.forecast {
+    display: none;
+}
+h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    margin: 0;
+    padding: 0;
+}
+h4 {
+    font-size: .8rem;
+    text-align: center;
+    margin: 0;
+    padding: 3px;
+}
+
+/*----- Contact Info -----*/
+aside {
+    grid-area: contact;
+}
+
+/*----- Footer -----*/
+footer {
+    grid-area: footer;
+    display: grid;
+}
+ul {
+    background-color: #084764;
+    grid-auto-flow: column;
+    width: 100%;
+}
+
+li {
+    display: grid;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 4px 6px;
+    text-decoration: none;
+    font-size: .75rem;
+    align-content: space-around;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+
+/*----- Navigation Menu Formatting -----*/
+nav{
+    font-family: 'Lato', sans-serif; 
+    display: grid;
+    grid-area: nav;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #084764;
+    display: grid;
+  }
+.row {
+    display: flex;
+    justify-content: space-between;
+}  
+  .topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #f5cb5c;
+    color: #084764;
+  }
+  
+  .active {
+    background-color: #067252;
+    color: white;
+  }
+  .topnav .icon {
+    display: none;
+  }
+  @media screen and (max-width: 720px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        display: inherit;
+    }
+  }
+  
+  @media screen and (max-width: 720px) {
+    .topnav.responsive {position: relative;}
+  /*  .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0; */
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+

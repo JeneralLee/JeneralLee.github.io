@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Weather in Your Corner &verbar; Soda Springs, ID</title>
+    <meta name="description" content="Weather for Soda Springs ID">
+    <link rel="stylesheet" href="../../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <!--[if lt IE 9]-->
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <!--[endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <!--The next stylesheet is for hamburger menu-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+
+<body>
+    <header>
+        <figure class="headerbox">
+            <img class ="headerimg" id="logo" src="images/if_weather-05_1530388.png" alt="logo">
+        </figure>
+        <div class="headertext">
+            <h1>Weather In Your Corner</h1>
+            <h2 class="motto">Up-to-the-minute weather for Southeast Idaho</h2>
+        </div>
+        <div class="currentconditions">
+            <img class="headerimg" id="current" src="images/if_weather-01_1530392.png" alt="current weather condition icon">
+            <p class="currentdescr" id="weatherdescription">broke</p>
+        </div>
+    </header>
+    <nav class="topnav" id="myTopnav">
+        <div class="row">
+          <a href="#menu" class="active">Menu</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+        </div>
+        <a href="index.html" target="_blank">Home</a>
+        <a href="preston.html" target="_blank">Preston</a>
+        <a href="#SodaSprings">Soda Springs</a>
+        <a href="fishhaven.html" target="_blank">Fish Haven</a>
+        <a href="stormcenter.html" target="_blank">Storm Center</a>
+        <a href="gallery.html" target="_blank">Gallery</a>
+    </nav>
+    <main>
+        <h2 class="pagetitle">The Town of Soda Springs</h2>
+        <div class="hero">
+            <figure>
+                 <img src="images/mahir-uysal-372547-unsplash-400-70p.jpg" alt="image of soda springs" 
+                 class="hero-img" sizes="100vw">
+            </figure>    
+            <section class="weathersummary">
+                <div class="weatherdetails">
+                    <h3 class="summarytitle">Weather Summary</h3>
+                    <p class="label">Currently:</p>
+                    <p class="value" id="current">broke</p>
+                    <p class="label">Temperature (F&deg;):</p>
+                    <p class="value"id="t">broke</p>
+                    <p class="label">Humidity (&percnt;):</p>
+                    <p class="value" id="humidity">broke</p>
+                    <p class="label">Precipitation (inches):</p>
+                    <p class="value" id="precipitation">0</p>
+                    <p class="label">Wind Speed (mph):</p>
+                    <p class="value" id="s">broke</p>
+                    <p class="label">Wind Chill (F&deg;):</p>
+                    <p class="value" id="windchill">broke</p>
+                </div>
+            </section>
+        </div>
+        <section class="forecast">
+            <h3>High Temperature Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th id="day1">Wed</th>
+                        <th id="day2">Thu</th>
+                        <th id="day3">Fri</th>
+                        <th id="day4">Sat</th>
+                        <th id="day5">Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Forecast</th>
+                        <td id="temp1">89&deg;F</td>
+                        <td id="temp2">87&deg;F</td>
+                        <td id="temp3">78&deg;F</td>
+                        <td id="temp4">75&deg;F</td>
+                        <td id="temp5">72&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <article class="article">
+            <h3 class="headline">What's Happening This Weekend</h3>
+            <h4 class="byline">by Suzie Q. Snowflake</h4>  
+            <img id="fair" class="article-img" src="images/fair.jpg" alt="State fair grounds with rides"> 
+            <p class="text">
+                Nulla elementum turpis sit amet lobortis congue. Quisque ut lorem
+                vel mi dapibus sagittis. Phasellus pretium odio a dolor aliquam
+                aliquam. Quisque ultrices lacus ac bibendum lobortis. Nam quam
+                eros, iaculis in dapibus at, hendrerit et mi. Phasellus ultricies
+                facilisis eros non elementum. Duis erat mauris, posuere vitae
+                sapien sed, ornare pellentesque diam. Nullam vel consectetur
+                nunc. Vivamus eu elit vel risus laoreet mollis vitae a mauris.
+                Quisque blandit at nulla vel hendrerit. Morbi hendrerit, mauris
+                sit amet sodales laoreet, dui urna tempor tellus, sed rutrum
+                <a href="#fullarticle">. . . click here to continue to full text.</a>
+            </p>
+        </article>
+    </main> 
+    <aside id="contactinfo"></aside>
+    <footer class="topnav">
+        <ul class="footer">
+            <li>&copy;</li>
+            <li>Weather in Your Corner &vert; </li>
+            <li>Attributions &vert; </li>
+            <li>Jennifer Ruggles &vert; </li>
+            <li id="footer-date"></li>
+        </ul>
+    </footer>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/preston.js"></script>
+<script src="scripts/windchill.js"></script>
+</body>
+
+</html>

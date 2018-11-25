@@ -1,0 +1,102 @@
+@media screen and (min-width: 800px) {
+    body {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(autofill, minmax(20px, 1fr));
+        grid-template-areas: 
+                            'head head head head head head head'
+                            'nav nav nav nav nav nav nav'
+                            'hero hero hero hero hero hero hero'
+                            'forecast forecast forecast forecast forecast forecast forecast'
+                            'article article article article article article article'
+                            'contact contact contact contact contact contact contact'
+                            'footer footer footer footer footer footer footer';
+    
+    }
+
+    header {
+        column-span: all;
+        grid-template-columns: 1fr 60% 1fr;
+    }
+
+    .currentconditions {
+        background-color: rgb(206, 205, 205);
+        padding-right: 10px;
+        max-width: 150px;
+        border-radius: 5px;
+        grid-area: current;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'img condition';
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .currentconditions p {
+        color: #084764;
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        grid-area: condition;
+    }
+    
+    .currentconditions img {
+        grid-area: img;
+    }
+
+    .topnav a:first-child {
+                margin-right: auto;
+    }
+}   
+
+    .forecast {
+        visibility: visible;
+        display: grid;
+    }
+    .article-img {
+        order: 1;
+        flex-grow: 1;
+        max-width: 45%;
+        align-self: flex-end;
+    }
+    .topnav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .text {
+        justify-content: flex-start;
+        max-width: 50%;
+    }
+    .headline, .byline {
+        justify-content: flex-start;
+        max-width: 50%;
+    }
+    }
+    .topnav .icon {
+        display: none;
+      }
+
+table {
+    width: 100%;
+    margin: 20px auto;
+    table-layout: auto;
+  }
+  
+  .fixed {
+    table-layout: fixed;
+  }
+  
+  table,
+  td,
+  th {
+    border-collapse: collapse;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    border: solid 1px;
+    text-align: center;
+  }
+
+
+@media screen and (min-width: 1080px) {
