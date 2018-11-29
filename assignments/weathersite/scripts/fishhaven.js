@@ -3,13 +3,13 @@ var weatherRequest = new XMLHttpRequest();
 weatherRequest.open("GET", apiURL);
 weatherRequest.responseType = 'json';
 weatherRequest.send();
-weatherRequest.onload = function (){
+weatherRequest.onload = function() {
     var currentTemp = weatherRequest.response;
     document.getElementById("weatherdescription").innerHTML = currentTemp.list[0].weather[0].main;
     document.getElementById("current").innerHTML = currentTemp.list[0].weather[0].main;
     document.getElementById("t").innerHTML = currentTemp.list[0].main.temp;
     document.getElementById("humidity").innerHTML = currentTemp.list[0].main.humidity;
-   document.getElementById("precipitation").innerHTML = currentTemp.list[0].########;
+   document.getElementById("precipitation").innerHTML = currentTemp.list[0].main;
     document.getElementById("s").innerHTML = currentTemp.list[0].wind.speed;
 }
 
