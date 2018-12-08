@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Temple Inn &amp; Suites &verbar; Home</title>
+    <meta name="description" content="Temple Inn &amp; Suites Hotel Services for 
+    Church of Jesus Christ of Latter-Day Saints Temple Patrons">
+    <link rel="stylesheet" href="../../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!--The next stylesheet is for hamburger menu-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top">
+            <a href="#" class="menu_icon"><i class="material-icons">dehaze</i></a>
+        </div>
+        <h1>Temple Inn &amp; Suites</h1>
+        <img src="images/logo-fff.PNG" alt="Temple Inn and Suites logo" class="logo">
+    </header>
+    <nav class="menu">
+        <ul id="mainmenu">
+            <li><a href="index.html" class="item_menu">home</a></li>
+            <li><a href="temples.html" class="item_menu">Temples</a></li>
+            <li><a href="services.html" class="item_menu">Services</a></li>
+            <li><a href="#" class="item_menu">Reservations</a></li>
+            <li><a href="contact-us.html" class="item_menu">Contact</a></li>
+        </ul>
+    </nav>
+    <h2 class="pageTitle">Make a Reservation</h2>
+    <form method="get" action="thank-you.html">
+        <fieldset>
+            <legend></legend>
+            <label><input type="radio" name="location" value="Anchorage">Anchorage, AK<br></label>
+            <label><input type="radio" name="location" value="Columbia">Columbia River, WA<br></label>
+            <label><input type="radio" name="location" value="Houston">Houston, TX<br></label>
+            <label><input type="radio" name="location" value="Nauvoo">Nauvoo, IL<br></label>
+            Check-In:<br>
+            <input type="date" name="date"><br>
+            Check-Out:<br>
+            <input type="date" name="date"><br>
+            Number of Guests:<br>
+            <input type="number" length="15"><br>
+            Choose Room(s):<br>
+            <input type="checkbox" name="room1" value="1 King">One King Bed<br>
+            <input type="checkbox" name="room2" value="2 Queen">Two Queen Beds<br>
+            <input type="checkbox" name="suite1" value="Queen Suite">Queen Suite (Sleeps up to 6)<br>
+            <input type="checkbox" name="suite2" value="King Suite">King Suite (Sleeps up to 10)<br>
+            Special Accomodations / Comments:<br>
+            <textarea name="comments" rows="10" cols="30" placeholder="Optional"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Personal Information</legend>
+            First Name:<br>
+            <input type="text" name="firstName" placeholder="Jane"><br>
+            Last Name:<br>
+            <input type="text" name="lastName" placeholder="Doe"><br>
+            Email:<br>
+            <input type="email" name="email" placeholder="name@email.com"><br>
+            Phone:<br>
+            <input type="tel" name="telephone" placeholder="301 555 1234"><br>
+            State / Territory / U.S. Armed Forces:<br>
+            <select name="state">
+                <option label="Please select..." disabled selected>Please select...</option>
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AR">AR</option>	
+                <option value="AZ">AZ</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DC">DC</option>
+                <option value="DE">DE</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="IA">IA</option>	
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="MA">MA</option>
+                <option value="MD">MD</option>
+                <option value="ME">ME</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MO">MO</option>	
+                <option value="MS">MS</option>
+                <option value="MT">MT</option>
+                <option value="NC">NC</option>	
+                <option value="NE">NE</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>			
+                <option value="NV">NV</option>
+                <option value="NY">NY</option>
+                <option value="ND">ND</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VT">VT</option>
+                <option value="VA">VA</option>
+                <option value="WA">WA</option>
+                <option value="WI">WI</option>	
+                <option value="WV">WV</option>
+                <option value="WY">WY</option>
+                <option value="AS">American Samoa</option>
+                <option value="GU">Guam</option>
+                <option value="MP">Northern Mariana Islands</option>
+                <option value="PR">Puerto Rico</option>
+                <option value="UM">United States Minor Outlying Islands</option>
+                <option value="VI">Virgin Islands</option>
+                <option value="AA">Armed Forces Americas</option>
+                <option value="AP">Armed Forces Pacific</option>
+                <option value="AE">Armed Forces Others</option>	
+            </select><br>
+        </fieldset>
+        <input type="submit" value="Submit My Reservation" class="submitBtn">
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div>Jennifer Ruggles &verbar; CIT 230:09&thinsp;<a href="reference.html" target="_blank"> &verbar; References &verbar; 
+            <span id="footerdate"></span></a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+</body>
+</html>

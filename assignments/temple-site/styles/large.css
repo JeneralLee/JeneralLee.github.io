@@ -1,0 +1,7 @@
+@media screen and (min-width: 750px) {
+    header > h1 {
+        display: initial;
+        margin-left: 60px;
+    }
+
+}
