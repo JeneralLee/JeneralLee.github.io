@@ -65,7 +65,7 @@ $(function() {
 });
 
 /*----- Call JSON Data WIP-----*/
-var JSONrequestURL = "../files/temple-closure.json";
+var JSONrequestURL = "https://raw.githubusercontent.com/JeneralLee/JeneralLee.github.io/master/assignments/temple-site/files/temple-closures.json";
 var JSONrequest = new XMLHttpRequest();
 
 JSONrequest.open("GET", JSONrequestURL);
@@ -77,8 +77,9 @@ JSONrequest.onload = function() {
 }
 
 function anchorage(jsonObj) {
-	var anchSched = jsonObj.date[0];
-		document.getElementById("anchorage").innerHTML = anchSched;
+	for (i=0; i<jsonObj.length; i++)
+	var anchSched = jsonObj.date[i];
+		document.getElementById("anchorage").innerHTML += anchSched + "<br>";
 		console.log(JSONrequest.response);
 	}
 

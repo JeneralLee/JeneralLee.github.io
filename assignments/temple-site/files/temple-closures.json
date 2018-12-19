@@ -1,3 +1,6 @@
-{"temple" : "Anchorage", 
- "date" : ["Tuesday, 25 December 2018","Wednesday, 26 December 2018","Tuesday, 1 January 2019","25 March - 8 April 2019"
-]}
+{
+ "AKdate" : ["Tuesday, 25 December 2018","Wednesday, 26 December 2018","Tuesday, 1 January 2019","25 March - 8 April 2019"],
+ "CRdate" : ["Tuesday, 25 December 2018","Monday, 31 December 2018","Tuesday, 1 January 2019","5 - 18 March 2019"],
+ "TXdate" : ["Tuesday, 25 December 2018","Tuesday, 1 January 2019","25 February - 11 March 2019"],
+ "ILdate" : ["17 September - 17 December 2018","Tuesday, 25 December 2018","29 April - 12 May 2019"]
+}
