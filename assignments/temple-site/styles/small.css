@@ -108,6 +108,7 @@ button {
     font-family: 'Raleway', sans-serif;
     color: #8e5572;
     background-color: #fff;
+    border: #8e5572 solid 2px;
 }
 
 .submitBtn {
