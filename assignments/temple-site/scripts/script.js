@@ -72,16 +72,40 @@ JSONrequest.open("GET", JSONrequestURL);
 JSONrequest.responseType = "json";
 JSONrequest.send();
 JSONrequest.onload = function() {
-	var closures = JSONrequest.response;
-	anchorage(closures);
+var x = JSONrequest.response;
+anchorage(x);
+columbiariver(x);
+houston(x);
+nauvoo(x);
 }
 
 function anchorage(jsonObj) {
-	for (i=0; i<jsonObj.length; i++)
-	var anchSched = jsonObj.date[i];
-		document.getElementById("anchorage").innerHTML += anchSched + "<br>";
-		console.log(JSONrequest.response);
-	}
+    var AKclosures = jsonObj['AKdate'];
+    for (var i = 0; i < AKclosures.length; i++) {
+        document.getElementById("anchorage").innerHTML += AKclosures[i] + "<br>";
+    }
+}
+
+function columbiariver(jsonObj) {
+    var CRclosures = jsonObj['CRdate'];
+    for (var i = 0; i < CRclosures.length; i++) {
+        document.getElementById("columbiariver").innerHTML += CRclosures[i] + "<br>";
+    }
+}
+
+function houston(jsonObj) {
+    var TXclosures = jsonObj['TXdate'];
+    for (var i = 0; i < TXclosures.length; i++) {
+        document.getElementById("houston").innerHTML += TXclosures[i] + "<br>";
+    }
+}
+
+function nauvoo(jsonObj) {
+    var ILclosures = jsonObj['ILdate'];
+    for (var i = 0; i < ILclosures.length; i++) {
+        document.getElementById("nauvoo").innerHTML += ILclosures[i] + "<br>";
+    }
+}
 
 /*----- Alaska Weather -----*/
 var AKapiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5879348&units=imperial&APPID=69d6a88fe18541eb0984a7492251747e";
