@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #b6ae7a;
+    background-color: #a19b70;
     min-height: 200px;
 	border-bottom: 3px solid #88665d;
 	display: flex;
@@ -69,11 +69,11 @@ li > a {
 }
 
 nav.menu > a:hover {
-    background-color: #b6ae7a;
+    background-color: #a19b70;
 }
 
 a.activeMenuItem {
-    background-color: #b6ae7a;
+    background-color: #a19b70;
     color: #88665d;
 }
 
@@ -164,7 +164,7 @@ iframe {
 
 footer {
 	min-height: 30px;
-    background-color: #b6ae7a;
+    background-color: #a19b70;
     border-top: 3px solid #88665d;
 	color: #fff;
 	display: flex;
