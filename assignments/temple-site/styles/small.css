@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #a19b70;
+    background-color: #fff;
     min-height: 200px;
 	border-bottom: 3px solid #88665d;
 	display: flex;
@@ -24,7 +24,7 @@ header > h1 {
 	width: calc(100% - 160px);
 	text-align: center;
 	font-size: 6vw;
-    color: #fff;
+    color: #8e5572;
     font-family: 'Cinzel', serif;
     display: none;
 }
@@ -35,7 +35,7 @@ header > .top {
 }
 
 header > .top a.menu_icon i {
-	color: #fff;
+	color: #8e5572;
 	font-size: 40px;
 	padding-top: 5px;
 	transition: .2s ease;
@@ -43,7 +43,7 @@ header > .top a.menu_icon i {
 
 header > .top a.menu_icon:hover i {
     color: #fff;
-    background-color: #88665d;
+    background-color: #8e5572;
 }
 
 nav.menu {
