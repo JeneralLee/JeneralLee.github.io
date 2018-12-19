@@ -41,117 +41,131 @@
                 <img src="images/anchorage-temple-small.jpg" alt="Anchorage temple">
             </picture>
             <ul class="accordian">
-                <li>
-                    <a class="toggle" href="javascript:void(0);">Temple Information</a>
-                    <ul class="inner">
-                        <li>Contact the Temple
-                            <ul class="inner">
-                                <li>13161 Brayton Dr</li>
-                                <li>Anchorage, AK 99516</li>
-                                <li>United States</li>
-                                <li>(1) 907-348-7890</li>
-                                <li>Log in to send email to temple</li>
-                            </ul>
-                        </li>
-                        <li>Services
-                            <ul class="inner">
-                                <li>No clothing rental available</li>
-                                <li>No cafeteria available</li>        
-                                <li>No patron housing available</li>        
-                                <li>No distribution center nearby</li>
-                            </ul>
-                        </li>
-                        <li>Weather
-                            <div class="AKweather">API Data goes here</div>
-                        </li>
+            <li>
+                <a class="toggle" href="javascript:void(0);">Temple Information</a>
+                <ul class="inner">
+                    <li>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Contact Info</td>
+                                <td>Services</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>13161 Brayton Dr</td>
+                                <td>No clothing rental available</td>
+                            </tr>
+                            <tr>
+                                <td>Anchorage, AK 99516</td>
+                                <td>No cafeteria available</td>
+                            </tr>
+                            <tr>
+                                <td>United States</td>
+                                <td>No patron housing available</td>
+                            </tr>
+                            <tr>
+                                <td>(1) 907-348-7890</td>
+                                <td>No distribution center nearby</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Log in to send email to temple</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </li>
+                    <br>
+                    <li>
+                        <div class="weather">It is <span id="AKweather"></span>&deg;F and <span id="AKsky"></span></div>
+                    </li>
                     </ul>
-                </li>
-                <li>
-                    <a class="toggle" href="javascript:void(0);">Schedule</a>
-                    <ul class="inner">
-                        <li>Ordinance Schedule
-                            <table>
-                                    <thead>
-                                        <tr>
-                                            <th colspan="2" class="tabletitle">Baptisms</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Weekdays</td>
-                                            <td>7pm - 9pm</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Saturday</td>
-                                            <td>8am - 1pm</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <p>For initiary information and schedule, please call the temple.</p>
-                                <p>For sealing information and schedule, please call the temple.</p>
-                        </li>
-
-                        <li>Session Schedule
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th colspan="4" class="tabletitle">Endowments</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Tuesday</td>
-                                        <td>7pm</td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Wednesday</td>
-                                        <td>5:30am</td>
-                                        <td>10am</td>
-                                        <td>7pm</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Thursday</td>
-                                        <td>10am</td>
-                                        <td>7pm</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Friday</td>
-                                        <td>11am</td>
-                                        <td>6:30p</td>
-                                        <td>8pm</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Saturday</td>
-                                        <td>8am</td>
-                                        <td>10am</td>
-                                        <td>12pm</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </li>
-                        <li>Closures
-                            <div class="anchorage">JSON data here</div>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="toggle" href="javascript:void(0);">History</a>
-                    <ul class="inner">
-                        <li>
-                            <p>Announced<br>    
-                            October 4, 1997<br>
-                            Groundbreaking<br>
-                            April 17, 1998<br>
-                            Dedicated<br>
-                            January 9, 1999<br>
-                            Rededicated<br>
-                            February 8, 2004</p>
-                        </li>
-                    </ul>
-                </li>
+            </li>
+            <li>
+                <a class="toggle" href="javascript:void(0);">Schedule</a>
+                <ul class="inner">
+                    <li>Ordinance Schedule
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="tabletitle">Baptisms</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Weekdays</td>
+                                <td>7pm - 9pm</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>8am - 1pm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>For initiatory information and schedule, please call the temple.</p>
+                    <p>For sealing information and schedule, please call the temple.</p>
+                    </li>
+                    <li>Session Schedule
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="4" class="tabletitle">Endowments</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>7pm</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>5:30am</td>
+                                <td>10am</td>
+                                <td>7pm</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>10am</td>
+                                <td>7pm</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>11am</td>
+                                <td>6:30p</td>
+                                <td>8pm</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>8am</td>
+                                <td>10am</td>
+                                <td>12pm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </li>
+                    <li>Closures
+                        <div class="anchorage">JSON data here</div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="toggle" href="javascript:void(0);">History</a>
+                <ul class="inner">
+                    <li>
+                        <p>Announced<br>    
+                        October 4, 1997<br>
+                        Groundbreaking<br>
+                        April 17, 1998<br>
+                        Dedicated<br>
+                        January 9, 1999<br>
+                        Rededicated<br>
+                        February 8, 2004</p>
+                    </li>
+                </ul>
+            </li>
             </ul>
             <div id="anchorage"></div>
         </div>
@@ -162,101 +176,116 @@
                 <img src="images/washington-temple-small.jpg" alt="Columbia River temple">
             </picture>
             <ul class="accordian">
-                <li>
-                    <a class="toggle" href="javascript:void(0);">Temple Information</a>
-                    <ul class="inner">
-                        <li>Contact the Temple
-                            <ul class="inner">
-                                <li>969 Gage Blvd</li>
-                                <li>Richland, WA 99352-7777</li>
-                                <li>United States</li>
-                                <li>(1) 509-628-0990</li>
-                                <li>Log in to send email to temple</li>
-                            </ul>
-                        </li>
-                        <li>Services
-                            <ul class="inner">
-                                <li>No clothing rental available</li>
-                                <li>No cafeteria available</li>        
-                                <li>No patron housing available</li>        
-                                <li>Distribution center nearby</li>
-                            </ul>
-                        </li>
-                        <li>Weather
-                            <div class="CRweather">API Data goes here</div>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="toggle" href="javascript:void(0);">Schedule</a>
-                    <ul class="inner">
-                        <li>Ordinance Schedule
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th colspan="3" class="tabletitle">Baptisms</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Tuesday, Wednesday, Saturday</td>
-                                        <td>8am - 8pm</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Thursday</td>
-                                        <td>5:15am - 6:45am</td>
-                                        <td>8am - 8pm</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <p>For initiary information and schedule, please call the temple.</p>
-                            <p>For sealing information and schedule, please call the temple.</p>
-                        </li>
-                        <li>Session Schedule
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th colspan="5" class="tabletitle">Endowments</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Tuesday, Wednesday, Friday</td>
-                                        <td>8am</td>
-                                        <td>10am</td>
-                                        <td>12pm</td>
-                                        <td>2pm</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Thursday, Saturday</td>
-                                        <td>6am</td>
-                                        <td>8am</td>
-                                        <td>10am</td>
-                                        <td>12pm</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </li>
-                        <li>Closures
-                            <div class="columbiariv">JSON data here</div>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="toggle" href="javascript:void(0);">History</a>
-                    <ul class="inner">
-                        <li>
-                            <p>Announced<br>    
-                            April 2, 2000<br>
-                            Groundbreaking<br>
-                            October 28, 2000<br>
-                            Dedicated<br>
-                            November 18, 2001<br>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+            <li>
+                <a class="toggle" href="javascript:void(0);">Temple Information</a>
+                <ul class="inner">
+                    <li>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Contact Info</td>
+                                <td>Services</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>969 Gage Blvd</td>
+                                <td>No clothing rental available</td>
+                            </tr>
+                            <tr>
+                                <td>Richland, WA 99352-7777</td>
+                                <td>No cafeteria available</td>
+                            </tr>
+                            <tr>
+                                <td>United States</td>
+                                <td>No patron housing available</td>
+                            </tr>
+                            <tr>
+                                <td>(1) 509-628-0990</td>
+                                <td>Distribution center nearby</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Log in to send email to temple</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </li>
+                    <br>
+                    <li>
+                        <div class="weather">It is <span id="CRweather"></span>&deg;F and <span id="CRsky"></span></div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="toggle" href="javascript:void(0);">Schedule</a>
+                <ul class="inner">
+                    <li>Ordinance Schedule
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="3" class="tabletitle">Baptisms</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tuesday, Wednesday, Saturday</td>
+                                    <td>8am - 8pm</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday</td>
+                                    <td>5:15am - 6:45am</td>
+                                    <td>8am - 8pm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>For initiatory information and schedule, please call the temple.</p>
+                        <p>For sealing information and schedule, please call the temple.</p>
+                    </li>
+                    <li>Session Schedule
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="5" class="tabletitle">Endowments</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tuesday, Wednesday, Friday</td>
+                                    <td>8am</td>
+                                    <td>10am</td>
+                                    <td>12pm</td>
+                                    <td>2pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday, Saturday</td>
+                                    <td>6am</td>
+                                    <td>8am</td>
+                                    <td>10am</td>
+                                    <td>12pm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>Closures
+                        <div class="columbiariv">JSON data here</div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="toggle" href="javascript:void(0);">History</a>
+                <ul class="inner">
+                    <li>
+                        <p>Announced<br>    
+                        April 2, 2000<br>
+                        Groundbreaking<br>
+                        October 28, 2000<br>
+                        Dedicated<br>
+                        November 18, 2001<br>
+                    </li>
+                </ul>
+            </li>
+        </ul>
         </div>
         <div class="temple">
             <h3>Houston Temple</h3>
@@ -268,87 +297,85 @@
                 <li>
                     <a class="toggle" href="javascript:void(0);">Temple Information</a>
                     <ul class="inner">
-                        <li>Contact the Temple
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td>Contact Info</td>
-                                        <td>Services</td>
-                                    </tr>
-                                    <tr>
-                                        <td>15725 Champion Forest Dr.</td>
-                                        <td>Clothing rental available</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Spring, TX 77379-7036</td>
-                                        <td>No cafeteria available</td>
-                                    </tr>
-                                    <tr>   
-                                        <td>United States</td>
-                                        <td>No patron housing available</td>    
-                                    </tr>
-                                    <tr>    
-                                        <td>(1) 281-376-6804</td>
-                                        <td>Distribution center nearby</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Log in to send email to temple</td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </li>
-                        <li>Services
-                            <ul class="inner">
-                            </ul>
-                        </li>
-                        <li>Weather
-                            <div class="TXweather">API Data goes here</div>
-                        </li>
+                    <li>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Contact Info</td>
+                                <td>Services</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>15725 Champion Forest Dr.</td>
+                                <td>Clothing rental available</td>
+                            </tr>
+                            <tr>
+                                <td>Spring, TX 77379-7036</td>
+                                <td>No cafeteria available</td>
+                            </tr>
+                            <tr>   
+                                <td>United States</td>
+                                <td>No patron housing available</td>    
+                            </tr>
+                            <tr>    
+                                <td>(1) 281-376-6804</td>
+                                <td>Distribution center nearby</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Log in to send email to temple</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </li>
+                    <br>
+                    <li>
+                            <div class="weather">It is <span id="TXweather"></span>&deg;F and <span id="TXsky"></span></div>
+                    </li>
                     </ul>
                 </li>
                 <li>
                     <a class="toggle" href="javascript:void(0);">Schedule</a>
                     <ul class="inner">
                         <li>Ordinance Schedule
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th colspan="2" class="tabletitle">Baptisms</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Weekdays</td>
-                                        <td>8am - 9pm</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Saturday</td>
-                                        <td>7am - 4pm</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <p>For initiary information and schedule, please call the temple.</p>
-                            <p>For sealing information and schedule, please call the temple.</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="2" class="tabletitle">Baptisms</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Weekdays</td>
+                                    <td>8am - 9pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday</td>
+                                    <td>7am - 4pm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>For initiatory information and schedule, please call the temple.</p>
+                        <p>For sealing information and schedule, please call the temple.</p>
                         </li>
                         <li>Session Schedule
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th colspan="2" class="tabletitle">Endowments</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Weekdays</td>
-                                        <td>8am - 8pm on the hour</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Saturday</td>
-                                        <td>7am - 7pm on the hour</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="2" class="tabletitle">Endowments</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Weekdays</td>
+                                    <td>8am - 8pm on the hour</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday</td>
+                                    <td>7am - 7pm on the hour</td>
+                                </tr>
+                            </tbody>
+                        </table>
                         </li>
                         <li>Closures
                             <div class="houston">JSON data here</div>
@@ -379,101 +406,115 @@
                 <img src="images/nauvoo-temple-small.jpg" alt="Nauvoo temple">
             </picture>
             <ul class="accordian">
-                <li>
-                    <a class="toggle" href="javascript:void(0);">Temple Information</a>
-                    <ul class="inner">
-                        <li>Contact the Temple
-                            <ul class="inner">
-                                <li>50 N Wells St.</li>
-                                <li>Nauvoo, IL 62354</li>
-                                <li>United States</li>
-                                <li>(1) 217-453-6252</li>
-                                <li>Log in to send email to temple</li>
-                            </ul>
-                        </li>
-                        <li>Services
-                            <ul class="inner">
-                                <li>Clothing rental available</li>
-                                <li>No cafeteria available</li>        
-                                <li>No patron housing available</li>        
-                                <li>No distribution center nearby</li>
-                            </ul>
-                        </li>
-                        <li>Weather
-                            <div class="ILweather">API Data goes here</div>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="toggle" href="javascript:void(0);">Schedule</a>
-                    <ul class="inner">
-                        <li>Ordinance Schedule
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th colspan="2" class="tabletitle">Baptisms</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Tuesday, Thursday</td>
-                                        <td>9am - 2pm</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Wednesday, Friday</td>
-                                        <td>3pm - 8pm</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Saturday</td>
-                                        <td>8am - 7pm</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <p>For initiary information and schedule, please call the temple.</p>
-                            <p>For sealing information and schedule, please call the temple.</p>
-                        </li>
-
-                        <li>Session Schedule
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th colspan="2" class="tabletitle">Endowments</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Tuesday, Thursday</td>
-                                        <td>9am - 12pm, on the hour</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Wednesday, Friday</td>
-                                        <td>3pm - 6pm, on the hour</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Saturday</td>
-                                        <td>8am - 5pm, on the hour</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </li>
-                        <li>Closures
-                            <div class="nauvoo">JSON data here</div>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="toggle" href="javascript:void(0);">History</a>
-                    <ul class="inner">
-                        <li>
-                            <p>Announced<br>    
-                            April 4, 1999<br>
-                            Groundbreaking<br>
-                            October 24, 1999<br>
-                            Dedicated<br>
-                            June 27, 2002<br>
-                        </li>
-                    </ul>
-                </li>
+            <li>
+                <a class="toggle" href="javascript:void(0);">Temple Information</a>
+                <ul class="inner">
+                    <li>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Contact Info</td>
+                                <td>Services</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>50 N Wells St.</td>
+                                <td>Clothing rental available</td>
+                            </tr>
+                            <tr>
+                                <td>Nauvoo, IL 62354</td>
+                                <td>No cafeteria available</td>
+                            </tr>
+                            <tr>
+                                <td>United States</td>
+                                <td>No patron housing available</td>
+                            </tr>
+                            <tr>
+                                <td>(1) 217-453-6252</td>
+                                <td>No distribution center nearby</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Log in to send email to temple</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </li>
+                    <br>
+                    <li>
+                        <div class="weather">It is <span id="ILweather"></span>&deg;F and <span id="ILsky"></span></div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="toggle" href="javascript:void(0);">Schedule</a>
+                <ul class="inner">
+                    <li>Ordinance Schedule
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="tabletitle">Baptisms</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tuesday, Thursday</td>
+                                <td>9am - 2pm</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday, Friday</td>
+                                <td>3pm - 8pm</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>8am - 7pm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>For initiatory information and schedule, please call the temple.</p>
+                    <p>For sealing information and schedule, please call the temple.</p>
+                    </li>
+                    <li>Session Schedule
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="tabletitle">Endowments</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tuesday, Thursday</td>
+                                <td>9am - 12pm, on the hour</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday, Friday</td>
+                                <td>3pm - 6pm, on the hour</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>8am - 5pm, on the hour</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </li>
+                    <li>Closures
+                        <div class="nauvoo">JSON data here</div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="toggle" href="javascript:void(0);">History</a>
+                <ul class="inner">
+                    <li>
+                        <p>Announced<br>    
+                        April 4, 1999<br>
+                        Groundbreaking<br>
+                        October 24, 1999<br>
+                        Dedicated<br>
+                        June 27, 2002<br>
+                    </li>
+                </ul>
+            </li>
             </ul>
             <div id="nauvoo"></div>
         </div>

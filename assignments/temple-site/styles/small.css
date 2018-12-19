@@ -147,8 +147,8 @@ footer a {
     color: #fff;
 }
 
-.inner {
-    display: none;
+table {
+    font-size: .8rem; 
 }
 
 ul {
@@ -158,6 +158,7 @@ ul {
 
 ul.inner {
     padding-inline-start: 20px;
+    display: none;
 }
 
 li > a.toggle {
