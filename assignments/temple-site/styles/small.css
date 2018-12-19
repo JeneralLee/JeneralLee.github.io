@@ -72,7 +72,14 @@ nav.menu > a:hover {
     background-color: #c2b97f;
 }
 
+a.activeMenuItem {
+    background-color: #c2b97f;
+    color: #88665d;
+}
+
 main {
+    display: grid;
+    justify-items: center;
 	width: 100%;
 	padding: 30px;
 	box-sizing: border-box;
@@ -94,6 +101,7 @@ aside {
     margin-bottom: 30px;
     background-color: #bcaa99;
     max-width: 300px;
+    margin: 10px
 }
 
 button {
@@ -105,9 +113,18 @@ button {
     width: 40px;
 }
 
+.submitBtn {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    background-color: #8e5572;
+    padding: 10px;
+    margin-top: 10px;
+}
+
 picture img {
     width: 100%;
     box-shadow: 5px 10px #bcaa99;
+    margin-bottom: 12px;
 }
 
 details {
@@ -121,8 +138,31 @@ details {
     border: 2px solid #88665d;
     background-color: #bcaa99;
     color: #fff;
-    margin-top: 20px;
     justify-content: center;
+    padding: 15px;
+}
+
+.contactinfo > h3 {
+    margin:1px;
+}
+
+iframe {
+    margin: 20px 0;
+}
+
+.thankYou {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.thankyouBtn {
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+}
+
+.goHome {
+    margin-right: 10px;
 }
 
 footer {
@@ -181,4 +221,8 @@ li > a.toggle {
 		width: 100%;
 		left: -100%; 
 	}
+}
+
+section li {
+    margin: 12px 0;
 }
