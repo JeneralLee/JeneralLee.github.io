@@ -8,7 +8,7 @@ AKweatherRequest.onload = function (){
 	var AKcurrentTemp = AKweatherRequest.response;
 	document.getElementById("AKweather").innerHTML = AKcurrentTemp.list[0].main.temp;
 	document.getElementById("AKsky").innerHTML = AKcurrentTemp.list[0].weather[0].description;
-	console.log(AKweatherRequest.response);
+	//console.log(AKweatherRequest.response);
 }
 
 /*----- Columbia River Weather -----*/
@@ -21,7 +21,7 @@ CRweatherRequest.onload = function (){
 	var CRcurrentTemp = CRweatherRequest.response;
 	document.getElementById("CRweather").innerHTML = CRcurrentTemp.list[0].main.temp;
 	document.getElementById("CRsky").innerHTML = CRcurrentTemp.list[0].weather[0].description;
-	console.log(CRweatherRequest.response);
+	//console.log(CRweatherRequest.response);
 }
 
 /*----- Houston Weather -----*/
@@ -34,7 +34,7 @@ TXweatherRequest.onload = function (){
 var TXcurrentTemp = TXweatherRequest.response;
 document.getElementById("TXweather").innerHTML = TXcurrentTemp.list[0].main.temp;
 document.getElementById("TXsky").innerHTML = TXcurrentTemp.list[0].weather[0].description;
-console.log(TXweatherRequest.response);
+//console.log(TXweatherRequest.response);
 }
 
 /*----- Nauvoo Weather -----*/
@@ -47,5 +47,5 @@ ILweatherRequest.onload = function (){
 var ILcurrentTemp = ILweatherRequest.response;
 document.getElementById("ILweather").innerHTML = ILcurrentTemp.list[0].main.temp;
 document.getElementById("ILsky").innerHTML = ILcurrentTemp.list[0].weather[0].description;
-console.log(ILweatherRequest.response);
+//console.log(ILweatherRequest.response);
 }
