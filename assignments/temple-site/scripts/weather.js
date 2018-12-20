@@ -25,7 +25,7 @@ CRweatherRequest.onload = function (){
 }
 
 /*----- Houston Weather -----*/
-var TXapiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5194369&units=imperial&APPID=69d6a88fe18541eb0984a7492251747e";
+var TXapiURL = "https://api.openweathermap.org/data/2.5/forecast?id=4699066&units=imperial&APPID=69d6a88fe18541eb0984a7492251747e";
 var TXweatherRequest = new XMLHttpRequest();
 TXweatherRequest.open("GET", TXapiURL);
 TXweatherRequest.responseType = 'json';

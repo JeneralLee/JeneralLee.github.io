@@ -7,9 +7,9 @@ body {
 }
 
 header {
-    background-color: #fff;
+    background-color: #835572;
     min-height: 200px;
-	border-bottom: 3px solid #88665d;
+	border-bottom: 3px solid #fff;
 	display: flex;
 	align-items: center;
     justify-content: center;
@@ -24,7 +24,7 @@ header > h1 {
 	width: calc(100% - 160px);
 	text-align: center;
 	font-size: 6vw;
-    color: #8e5572;
+    color: #fff;
     font-family: 'Cinzel', serif;
     display: none;
 }
@@ -35,24 +35,29 @@ header > .top {
 }
 
 header > .top a.menu_icon i {
-	color: #8e5572;
+	color: #fff;
 	font-size: 40px;
 	padding-top: 5px;
 	transition: .2s ease;
 }
 
 header > .top a.menu_icon:hover i {
-    color: #fff;
-    background-color: #8e5572;
+    color: #8e5572;
+    background-color: #fff;
 }
 
 nav.menu {
 	width: 300px;
 	min-height: calc(100vh - 121px);
-	background-color: #88665d;
+	background-color: #8e5572;
 	position: absolute;
 	left: -300px;
 	transition: .3s all;
+}
+
+nav.menu li a:hover {
+    background-color: #fff;
+    color: #8e5572;
 }
 
 li {
@@ -66,10 +71,6 @@ li > a {
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
-}
-
-nav.menu > a:hover {
-    background-color: #a19b70;
 }
 
 a.activeMenuItem {
@@ -100,7 +101,7 @@ aside {
     padding: 10px;
     margin-bottom: 30px;
     background-color: #8e5572;
-    max-width: 300px;
+    max-width: 400px;
     margin: 10px
 }
 
@@ -108,7 +109,9 @@ button {
     font-family: 'Raleway', sans-serif;
     color: #8e5572;
     background-color: #fff;
-    border: #8e5572 solid 2px;
+    padding: 10px;
+    margin: 10px;
+    border: #8e5572 outset 6px;
 }
 
 .submitBtn {
@@ -165,7 +168,7 @@ iframe {
 
 footer {
 	min-height: 30px;
-    background-color: #a19b70;
+    background-color: #8e5572;
     border-top: 3px solid #88665d;
 	color: #fff;
 	display: flex;
@@ -201,7 +204,7 @@ ul.inner {
 
 li > a.toggle {
     min-width: 300px;
-    background-color: #8e5572;
+    background-color: #88665d;
     color: #fff;
     margin: 10px auto;
     padding: 10px;

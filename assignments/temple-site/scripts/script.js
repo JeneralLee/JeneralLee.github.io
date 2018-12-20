@@ -7,6 +7,7 @@ $(document).ready(function() {
 
 /*----- Wayfaring (NOT WORKING) -----*/
 
+
 /*----- Make Reservation Button ----*/
 function openRes() {
 	window.location = "reservation.html";
